@@ -1,11 +1,13 @@
-import { Component, signal } from '@angular/core';
+import { Component } from '@angular/core';
+import { Cabecalho } from './components/cabecalho/cabecalho';
+import { ListaReceitas } from './components/lista-receitas/lista-receitas';
+import { ReceitaDetalhes } from './components/receita-detalhes/receita-detalhes';
+import { Rodape } from './components/rodape/rodape';
 
 @Component({
   selector: 'app-root',
-  imports: [],
+  imports: [Cabecalho, ListaReceitas, ReceitaDetalhes, Rodape],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
-export class App {
-  protected readonly title = signal('guia-receitas');
-}
+export class App {}
