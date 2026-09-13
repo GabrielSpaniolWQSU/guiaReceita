@@ -1,4 +1,9 @@
 <section id="receitas">
-  <h2>Receitas</h2>
-  <app-receita-card></app-receita-card>
+  <h2>{{ titulo }}</h2>
+  <p>Total de receitas: {{ receitas.length }}</p>
+
+  @for (receita of receitas; track receita.id) {
+    <app-receita-card [receita]="receita"></app-receita-card>
+    <app-receita-detalhes [receita]="receita"></app-receita-detalhes>
+  }
 </section>

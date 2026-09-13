@@ -4,6 +4,9 @@ import { Component } from '@angular/core';
   selector: 'app-rodape',
   imports: [],
   templateUrl: './rodape.html',
-  styleUrl: './rodape.css',
+  styleUrl: './rodape.css'
 })
-export class Rodape {}
+export class Rodape {
+  nomeProjeto = 'Guia de receitas';
+  ano = new Date().getFullYear();
+}

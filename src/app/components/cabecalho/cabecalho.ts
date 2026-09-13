@@ -4,6 +4,9 @@ import { Component } from '@angular/core';
   selector: 'app-cabecalho',
   imports: [],
   templateUrl: './cabecalho.html',
-  styleUrl: './cabecalho.css',
+  styleUrl: './cabecalho.css'
 })
-export class Cabecalho {}
+export class Cabecalho {
+  titulo = 'Guia de receitas';
+  descricao = 'Receitas simples para o dia a dia.';
+}

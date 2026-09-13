@@ -1,4 +1,9 @@
 <article>
-  <h3>Nome da receita</h3>
-  <p>Aqui serão exibidas as informações básicas da receita.</p>
+  <h3>{{ receita().nome }}</h3>
+  <img [src]="receita().imagem" [alt]="receita().nome" width="280" height="180">
+  <p>{{ receita().descricao }}</p>
+  <p>Categoria: {{ receita().categoria }}</p>
+  <p>Dificuldade: {{ receita().dificuldade }}</p>
+  <p>Tempo de preparo: {{ receita().tempo }} minutos</p>
+  <p>Rendimento em porções: {{ receita().porcoes }}</p>
 </article>
